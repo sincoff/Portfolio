@@ -3,16 +3,25 @@
 import { Card } from "@/components/ui/card";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Meteors } from "@/components/ui/meteors";
+import { AnimatedGridPattern } from "@/components/ui/animated-grid-pattern";
 
 export function Hero() {
   return (
     <Card className="w-full min-h-[500px] bg-black/[0.96] relative overflow-hidden flex items-center justify-center">
+      <AnimatedGridPattern
+        numSquares={40}
+        maxOpacity={0.15}
+        duration={3}
+        repeatDelay={1}
+        className="[mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,#000_60%,transparent_100%)] fill-neutral-800/50 stroke-neutral-700/30"
+      />
+
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
       />
 
-      <Meteors number={15} />
+      <Meteors number={12} />
 
       <div className="relative z-10 text-center px-6 py-12 max-w-2xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
