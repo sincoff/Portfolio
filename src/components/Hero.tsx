@@ -1,22 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
+import { SplineScene } from "@/components/ui/splite";
 import { Card } from "@/components/ui/card";
 import { Spotlight } from "@/components/ui/spotlight";
 
-const SplineScene = dynamic(
-  () => import("@/components/ui/splite").then((m) => m.SplineScene),
-  { ssr: false, loading: () => <div className="w-full h-full bg-neutral-900/50" aria-hidden="true" /> }
-);
-
 export function Hero() {
-  const [loadSpline, setLoadSpline] = useState(false);
-  useEffect(() => {
-    const t = setTimeout(() => setLoadSpline(true), 1500);
-    return () => clearTimeout(t);
-  }, []);
-
   return (
     <Card className="w-full h-[500px] bg-black/[0.96] relative overflow-hidden border-0">
       <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
@@ -38,27 +26,24 @@ export function Hero() {
               href="https://sneaker-manager.xyz"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-neutral-200 transition focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-              aria-label="View Sneaker Vault Pro (opens in new tab)"
+              className="px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-neutral-200 transition"
             >
               View Featured Project
             </a>
             <a
               href="#projects"
-              className="px-6 py-3 border border-neutral-600 text-neutral-300 font-semibold rounded-lg hover:border-neutral-400 transition focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              className="px-6 py-3 border border-neutral-600 text-neutral-300 font-semibold rounded-lg hover:border-neutral-400 transition"
             >
               See All Projects
             </a>
           </div>
         </div>
 
-        <div className="flex-1 relative hidden md:block min-h-[300px]" aria-hidden="true">
-          {loadSpline && (
-            <SplineScene
-              scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-              className="w-full h-full"
-            />
-          )}
+        <div className="flex-1 relative hidden md:block">
+          <SplineScene
+            scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+            className="w-full h-full"
+          />
         </div>
       </div>
     </Card>

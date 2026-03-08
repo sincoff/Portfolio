@@ -12,8 +12,7 @@ export function Footer() {
             href="https://github.com/sincoff"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-300 font-medium hover:text-white transition focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black focus-visible:rounded"
-            aria-label="GitHub profile (opens in new tab)"
+            className="text-neutral-300 font-medium hover:text-white transition"
           >
             GitHub
           </a>
@@ -21,15 +20,13 @@ export function Footer() {
             href="https://www.linkedin.com/in/ian-s-0b5b09290/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-neutral-300 font-medium hover:text-white transition focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black focus-visible:rounded"
-            aria-label="LinkedIn profile (opens in new tab)"
+            className="text-neutral-300 font-medium hover:text-white transition"
           >
             LinkedIn
           </a>
           <a
             href="mailto:ian.sincoff@gmail.com"
-            className="text-neutral-300 font-medium hover:text-white transition focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black focus-visible:rounded"
-            aria-label="Email Ian Sincoff"
+            className="text-neutral-300 font-medium hover:text-white transition"
           >
             Email
           </a>

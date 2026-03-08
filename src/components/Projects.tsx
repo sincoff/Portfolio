@@ -24,8 +24,7 @@ const SNEAKER_VAULT = {
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 px-4 md:px-8" aria-labelledby="projects-heading">
-      <h2 id="projects-heading" className="sr-only">Projects</h2>
+    <section id="projects" className="py-24 px-4 md:px-8">
       <div className="max-w-4xl mx-auto space-y-12">
         <SoloProjectCard
           title={SNEAKER_VAULT.title}

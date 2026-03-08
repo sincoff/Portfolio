@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <div className="min-h-screen bg-black">
-      <main id="main-content" className="max-w-7xl mx-auto">
+      <main className="max-w-7xl mx-auto">
         <section className="px-4 md:px-8 pt-12 md:pt-16">
           <Hero />
         </section>

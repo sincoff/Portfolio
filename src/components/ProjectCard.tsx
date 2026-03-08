@@ -66,8 +66,7 @@ export function SoloProjectCard({
           href={liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-neutral-200 transition text-base focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-          aria-label={`View ${title} live app (opens in new tab)`}
+          className="px-6 py-3 bg-white text-black font-semibold rounded-lg hover:bg-neutral-200 transition text-base"
         >
           View Live App
         </a>
@@ -75,8 +74,7 @@ export function SoloProjectCard({
           href={codeUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-6 py-3 border border-neutral-600 text-neutral-300 font-semibold rounded-lg hover:border-neutral-400 transition focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
-          aria-label={`View ${title} source code (opens in new tab)`}
+          className="px-6 py-3 border border-neutral-600 text-neutral-300 font-semibold rounded-lg hover:border-neutral-400 transition"
         >
           See the Code
         </a>
