@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="py-16 px-4 md:px-8 border-t border-neutral-800">
+    <footer id="about" className="py-20 px-4 md:px-8 border-t border-neutral-800">
       <div className="max-w-4xl mx-auto">
         <p className="text-neutral-400 max-w-xl leading-relaxed mb-8">
           Full-stack developer focused on building web applications with Python,

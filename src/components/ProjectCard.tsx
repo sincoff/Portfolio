@@ -109,7 +109,7 @@ export function TeamProjectCard() {
       <CardHeader>
         <div className="flex items-center gap-2">
           <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-            Team Project (placeholder name)
+            Team Project
           </h3>
           <span className="px-2.5 py-0.5 text-xs font-medium rounded-md bg-neutral-800 text-amber-400 border border-amber-900/50">
             In Progress
