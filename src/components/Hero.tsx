@@ -14,7 +14,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 z-10 flex items-center justify-center px-6 py-12">
         <div className="text-center max-w-2xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 text-balance drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300 text-balance drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]">
             Ian Sincoff
           </h1>
           <p className="mt-3 text-lg md:text-xl text-neutral-200 font-medium">
