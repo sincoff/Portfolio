@@ -16,8 +16,20 @@ export function Footer() {
           >
             GitHub
           </a>
-          <span className="text-neutral-600">LinkedIn (placeholder)</span>
-          <span className="text-neutral-600">Email (placeholder)</span>
+          <a
+            href="https://www.linkedin.com/in/ian-s-0b5b09290/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-neutral-300 font-medium hover:text-white transition"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="mailto:ian.sincoff@gmail.com"
+            className="text-neutral-300 font-medium hover:text-white transition"
+          >
+            Email
+          </a>
         </div>
       </div>
     </footer>
