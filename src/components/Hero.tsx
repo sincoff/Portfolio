@@ -1,6 +1,7 @@
 "use client";
 
 import { FallingPattern } from "@/components/falling-pattern";
+import { GlowingBorder } from "@/components/ui/glowing-border";
 
 export function Hero() {
   return (
@@ -23,20 +24,17 @@ export function Hero() {
           <p className="mt-4 text-neutral-300 max-w-lg mx-auto">
             I build full-stack web applications with clean interfaces and scalable backends.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center items-center">
             <a
               href="https://sneaker-manager.xyz"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-neutral-200 transition text-center"
+              className="inline-block"
             >
-              View Featured Project
+              <GlowingBorder variant="primary">View Featured Project</GlowingBorder>
             </a>
-            <a
-              href="#projects"
-              className="px-8 py-3 border border-neutral-500 text-neutral-200 font-semibold rounded-lg hover:border-neutral-400 hover:text-white transition text-center"
-            >
-              See All Projects
+            <a href="#projects" className="inline-block">
+              <GlowingBorder variant="secondary">See All Projects</GlowingBorder>
             </a>
           </div>
         </div>
