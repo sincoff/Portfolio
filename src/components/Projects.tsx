@@ -26,6 +26,9 @@ export function Projects() {
   return (
     <section id="projects" className="py-20 px-4 md:px-8">
       <div className="max-w-4xl mx-auto space-y-12">
+        <h2 className="text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+          Projects
+        </h2>
         <SoloProjectCard
           title={SNEAKER_VAULT.title}
           description={SNEAKER_VAULT.description}

@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 interface GlowingBorderProps {
   children: React.ReactNode;
   className?: string;
-  /** "primary" = white fill, "secondary" = outlined */
+  /** "primary" = white fill (large), "secondary" = outlined (small) */
   variant?: "primary" | "secondary";
 }
 
@@ -37,10 +37,10 @@ export function GlowingBorder({
       />
       <span
         className={cn(
-          "relative z-10 rounded-lg px-6 py-3 font-semibold text-base transition",
+          "relative z-10 rounded-lg font-semibold transition",
           isPrimary
-            ? "bg-white text-black hover:bg-neutral-200"
-            : "bg-black/95 text-neutral-200 hover:text-white"
+            ? "px-8 py-3.5 text-lg font-bold bg-white text-black hover:bg-neutral-200"
+            : "px-6 py-2.5 text-sm bg-black/95 text-neutral-200 hover:text-white"
         )}
       >
         {children}

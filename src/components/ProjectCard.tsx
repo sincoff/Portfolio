@@ -23,7 +23,7 @@ function ProjectCard({ children, className }: ProjectCardProps) {
   return (
     <Card
       className={cn(
-        "bg-black/[0.96] border-neutral-800 overflow-hidden",
+        "bg-neutral-900 border-neutral-700 overflow-hidden transition-all duration-300 hover:border-neutral-500 hover:scale-[1.01] hover:shadow-lg",
         className
       )}
     >
@@ -50,6 +50,9 @@ export function SoloProjectCard({
   return (
     <ProjectCard>
       <CardHeader>
+        <span className="inline-block text-xs font-medium text-neutral-400 uppercase tracking-wider mb-2">
+          Featured Project
+        </span>
         <h3 className="text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
           {title}
         </h3>
