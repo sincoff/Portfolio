@@ -5,10 +5,10 @@ import { GlowingBorder } from "@/components/ui/glowing-border";
 
 export function Hero() {
   return (
-    <div className="w-full relative min-h-[400px]">
+    <div className="w-full relative min-h-[400px] bg-[#0a0a0f]/80 backdrop-blur-sm">
       <FallingPattern
         color="rgba(148, 163, 184, 0.7)"
-        backgroundColor="#000"
+        backgroundColor="#0a0a0f"
         duration={120}
         blurIntensity="0.4em"
         className="absolute inset-0 h-full [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,transparent,black)]"

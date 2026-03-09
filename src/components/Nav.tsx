@@ -19,7 +19,7 @@ export function Nav() {
 
   return (
     <nav
-      className="sticky top-0 z-50 w-full bg-black/95 backdrop-blur-sm border-b border-neutral-800"
+      className="sticky top-0 z-50 w-full bg-[#0a0a0f]/80 backdrop-blur-md border-b border-neutral-800"
       role="navigation"
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8">

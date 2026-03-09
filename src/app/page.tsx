@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-black">
+    <div className="min-h-screen min-w-full">
       <Nav />
       <main className="max-w-7xl mx-auto">
         <section className="px-4 md:px-8 pt-12 md:pt-16">

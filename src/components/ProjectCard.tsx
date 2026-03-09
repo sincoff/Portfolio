@@ -44,7 +44,7 @@ function ProjectCard({ children, className, featured = false }: ProjectCardProps
     <Card
       className={cn(
         "overflow-hidden transition-all duration-[0.4s] ease-[ease] p-8 rounded-xl ring-0",
-        "bg-[rgba(198,198,198,0.12)] backdrop-blur-[10px]",
+        "bg-white/[0.03] backdrop-blur-[10px]",
         "border-0 border-b-[3px] border-b-white/[0.15] border-l-2 border-l-white/[0.2] [border-left-style:outset]",
         featured
           ? "shadow-[-20px_30px_40px_rgba(0,0,0,0.4),0_0_30px_rgba(0,202,78,0.05)] hover:shadow-[-25px_40px_50px_rgba(0,0,0,0.5),0_0_30px_rgba(0,202,78,0.05)]"
